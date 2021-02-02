@@ -20,15 +20,27 @@
     padding: 20px;
     font-size: 30px;
     width: 30px;
-    text-align: center;
+    text-align: center end;
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
 
-    background: #ffffff;
-    color: #0afff3;
+    background: #000000;
+    color: #580000;
 }
 
 .fa:hover {
     opacity: 0.7;
+}
+
+.da {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center end;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    background: #000000;
+    color: #580000;
 }
