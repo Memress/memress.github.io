@@ -4,7 +4,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff;
+    color: #000000;
 }
 
 #backgroundBody {
@@ -13,7 +13,7 @@
     background-position: center center;
     /*background: url(background.png);*/
     background-size: cover;
-    background-color:#ffffff;
+    background-color: #ffffff;
 }
 
 .fa {
@@ -27,7 +27,7 @@
     border-radius: 50%;
 
     background: #720000;
-    color: #ffffff;
+    color: #000000;
 }
 
 .da {
@@ -36,7 +36,7 @@
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
-    color:  #ffffff;
+    color:  #000000;
 }
 
 
