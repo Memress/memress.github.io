@@ -1,45 +1,85 @@
-#textBody {
-    text-align: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #000000;
+/* Tarayıcının varsayılan boşluklarını sıfırlıyoruz */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }
 
+/* Arka plan ve içerik ortalama (Flexbox ile) */
 #backgroundBody {
+    display: flex;
+    align-items: center; /* Dikeyde ortalar */
+    justify-content: center; /* Yatayda ortalar */
+    
+    background-color: #ffffff;
+    background-image: url('background.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    background: url(background.png);
     background-size: cover;
-    background-color: #ffffff;
 }
 
+/* İçerik Kutusu */
+#textBody {
+    text-align: center;
+    color: #000000;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px; /* Çok büyük ekranlarda içeriğin aşırı yayılmasını önler */
+    box-sizing: border-box;
+}
+
+/* Resmi ekrana duyarlı (Responsive) hale getiren sınıf */
+.responsive-logo {
+    max-width: 100%; /* Ekran küçülürse resim de küçülür */
+    height: auto;    /* Oranını korur */
+    margin-bottom: 30px;
+}
+
+/* Sosyal ikonları sarmalayan alan */
+.social-links {
+    margin-bottom: 30px;
+}
+
+/* Sosyal Medya İkonları */
 .fa {
-    
+    display: inline-block; /* Mobilde daha düzgün durması için */
     padding: 20px;
     font-size: 20px;
     width: 20px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px;
     border-radius: 50%;
-
     background: #cccccc;
     color: #000000;
+    transition: opacity 0.3s ease; /* Hover efekti için yumuşak geçiş */
 }
-
-.da {
-    
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    color:  #000000;
-}
-
 
 .fa:hover {
     opacity: 0.7;
+}
+
+/* Alt linkler bölgesi */
+.footer-links {
+    display: flex;
+    flex-direction: column; /* Alt alta sıralanmalarını sağlar */
+    align-items: center;
+    gap: 15px; /* Aralarındaki boşluk */
+}
+
+/* Yazılar ve linkler */
+.da {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.privacy-link {
+    font-size: 160%;
+    font-weight: bold;
+}
+
+.support-text {
+    font-size: 100%;
 }
